@@ -1,1 +1,4 @@
 .env
+heroku_api/
+__pycache__/
+dogeenv/
