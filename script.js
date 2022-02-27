@@ -20,10 +20,10 @@ function myFunction() {
                '7day_high', '7day_low', '40day_open', '40day_close', '40day_high', '40day_low']
     
     if (elements[0].value == "") {
-        alert("Enter one or More Manglish words !");
+        alert("Enter yesterdays DOGE Prices accordingly in each cell!");
     } else if (elements[0].value.includes("(") ||
         elements[0].value.includes(")")) {
-        alert("Enter only Manglish keywords !");
+        alert("Enter yesterdays DOGE Prices accordingly in each cell!");
         clearFunction();
     } else {
         document.getElementById("demo").innerHTML = x;
