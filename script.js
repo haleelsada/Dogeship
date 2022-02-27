@@ -1,4 +1,4 @@
-var x = "Generating...";
+var x = "Predicting...";
 var keyword;
 
 function visible() {
