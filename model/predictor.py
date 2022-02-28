@@ -3,10 +3,10 @@
 import joblib
 import pandas as pd
 
-model=joblib.load('linear_model')
 
 #function to predict price
 def predicter(arr):
+  model=joblib.load('linear_model')
   return model.predict(arr)
 
 #input data from user
