@@ -25,4 +25,4 @@ The dataset collected was splitted into train and validation in the ratio 80:20.
 
 ### How to use
 
-Inorder to train the model, load the python jupyter notebook found **[here](https://github.com/haleelsada/Dogeship/blob/main/model/model_training.ipynb)** in a Google Colab and make a copy of it for your use. To predict the price use the Website fount **[here](https://haleelsada.github.io/Dogeship/)
+Inorder to train the model, load the python jupyter notebook found **[here](https://github.com/haleelsada/Dogeship/blob/main/model/model_training.ipynb)** in a Google Colab and make a copy of it for your use. To predict the price use the Website found **[here](https://haleelsada.github.io/Dogeship/)**.
