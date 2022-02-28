@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@600&family=Farro&family=Hind+Guntur:wght@600&family=Hind:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <title>Doge price predictor</title>
+  </head>
+
+  <body class="bg">
+    <div class="container">
+      <div class="middle">
+        <h1>DogeShip</h1>
+        <h2>Let's predict where $DOGE will Close?</h2>
+        <p class="description">
+          I can predict closing price of DOGE Coin using AI. <br />
+          Try me out! I have seen thousands of DOGE Days and learned my lesson<br />
+          Enter all the fields (in USD) of the previous day for prediction.
+        </p>
+        <a id="result">
+        <div class="formkey"> 
+          <form id="myForm" onsubmit="return false;">
+              <input class="Open keyword" id="Open" type="text"  name="fname" placeholder="Open" autocomplete="off" /><br />
+              <input class="High keyword" id="High" type="text"  name="fname" placeholder="High" autocomplete="off" /><br />
+              <input class="Low keyword" id="Low" type="text"  name="fname" placeholder="Low" autocomplete="off" /><br />
+              <input class="Close keyword" id="Close" type="text"  name="fname" placeholder="Close" autocomplete="off" /><br />
+              <input class="Volume keyword" id="Volume" type="text"  name="fname" placeholder="Volume in Billions" autocomplete="off" /><br />
+              <input class="7day_open keyword" id="7day_open" type="text"  name="fname" placeholder="7 day open" autocomplete="off" /><br />
+              <input class="7day_close keyword" id="7day_close" type="text"  name="fname" placeholder="7 day close" autocomplete="off" /><br />
+              <input class="7day_high keyword" id="7day_high" type="text"  name="fname" placeholder="7 day high" autocomplete="off" /><br />
+              <input class="7day_low keyword" id="7day_low" type="text"  name="fname" placeholder="7 day low" autocomplete="off" /><br />
+              <input class="40day_open keyword" id="40day_open" type="text"  name="fname" placeholder="40 day open" autocomplete="off" /><br />
+              <input class="40day_close keyword" id="40day_close" type="text"  name="fname" placeholder="40 day close" autocomplete="off" /><br />
+              <input class="40day_high keyword" id="40day_high" type="text"  name="fname" placeholder="40 day high" autocomplete="off" /><br />
+              <input class="40day_low keyword" id="40day_low" type="text"  name="fname" placeholder="40 day low" autocomplete="off" /><br />
+            </form>
+        </div>
+          <div class="buttons">
+            <button form="myForm" class="button1" id="generate" onclick="myFunction()">
+              Predict
+            </button>
+            <button class="button2" onClick="clearFunction()">clear</button>
+          </div>
+        </a>
+
+        <div class="scroller" id="scroller">
+          <pre class="lyrics" id="demo"></pre>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="left">
+        <a href="https://github.com/haleelsada" target="_blank">
+          <img
+            class="icon jj"
+            src="https://avatars.githubusercontent.com/u/75977159?v=4"
+          />
+        </a>
+        <a href="https://github.com/nandakishormpai2001" target="_blank">
+          <img
+            class="icon nmpai"
+            src="https://avatars.githubusercontent.com/u/57388834?v=4"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+
+</html>
