@@ -1,5 +1,11 @@
 # Dogeship
 
+#### Built as a part of Tinkerhub Co-Coder 2022 Event.
+
+### **[Website](https://haleelsada.github.io/Dogeship/)**
+### **[Webapp/API](https://dogecoin-prediction-bot.herokuapp.com/)**
+### **[ML Model Notebook](https://github.com/haleelsada/Dogeship/blob/main/model/model_training.ipynb)**
+
 ## A project to predict the price of Doge cryptocurrency of any date based on previous data. 
 
 ### How it Works ?
@@ -25,4 +31,52 @@ The dataset collected was splitted into train and validation in the ratio 80:20.
 
 ### How to use
 
-Inorder to train the model, load the python jupyter notebook found **[here](https://github.com/haleelsada/Dogeship/blob/main/model/model_training.ipynb)** in a Google Colab and make a copy of it for your use. To predict the price use the Website found **[here](https://haleelsada.github.io/Dogeship/)**.
+Inorder to train the model, load the python jupyter notebook found **[here](https://github.com/haleelsada/Dogeship/blob/main/model/model_training.ipynb)** in a Google Colab and make a copy of it for your use.<br>
+To predict the price use the Website found **[here](https://haleelsada.github.io/Dogeship/)**.
+
+## API
+
+API is built using Flask framework and hosted in Heroku.
+
+- Plant Disease Detection
+
+    Accepts a POST request with input features as a dictionary and returns a dictionary with close price prediction.
+    
+
+#### How to use
+
+API has been built on this Regression Model. URL = "https://dogecoin-prediction-bot.herokuapp.com/"
+
+User has to send a POST request to the given api with a dictionary of Input Features. 
+
+```python
+import requests
+
+columns = ['Open', 'High', 'Low', 'Close', 'Volume', '7day_open', '7day_close',
+               '7day_high', '7day_low', '40day_open', '40day_close', '40day_high', '40day_low']
+# Sample Inputs
+arr = [0.000293, 0.000299, 0.00026, 0.000268, 1463600, 0.000287714285714,
+           0.000290571428571, 0.000325, 0.00026, 0.000300025, 0.000298775, 0.000467, 0.000223]
+dic = {columns[i]: arr[i] for i in range(len(arr))}
+
+url="https://dogecoin-prediction-bot.herokuapp.com/"
+r = requests.post(url,json = dic)
+print(r.text)
+```
+Output
+```python
+'{"close":0.0003021457613296437}\n'
+```
+
+## Contributors
+
+<table>
+  <tr>
+
+ <td align="center"><a href="https://github.com/haleelsada"><img src="https://avatars.githubusercontent.com/u/75977159?v=4" width="180px;" alt=""/><br /><sub><b>Haleel sada</b></sub></a><br />        
+
+<td align="center"><a href="https://github.com/nandakishormpai"><img src="https://avatars.githubusercontent.com/u/57388834?v=4" width="180px;" alt=""/><br /><sub><b>Nanda Kishor M Pai</b></sub></a><br />
+
+
+</tr>
+</table>
