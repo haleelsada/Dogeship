@@ -1,5 +1,4 @@
 import joblib
-import numpy as np
 import pandas as pd
 
 
@@ -14,7 +13,11 @@ def predict_close(arr):
 
 
 if __name__ == '__main__':
+
+    # Sample Inputs for testing
+
     arr = [0.000293, 0.000299, 0.00026, 0.000268, 1463600, 0.000287714285714,
            0.000290571428571, 0.000325, 0.00026, 0.000300025, 0.000298775, 0.000467, 0.000223]
+
     result = predict_close(arr)
     print(result[0])
