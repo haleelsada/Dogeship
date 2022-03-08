@@ -1,51 +1,48 @@
 # Dogeship
 
-#### Built as a part of Tinkerhub Co-Coder 2022 Event.
+A project to predict the price of Doge cryptocurrency of any date based on previous data.
 
-### **[Website](https://haleelsada.github.io/Dogeship/)**
-### **[Webapp/API](https://dogecoin-prediction-bot.herokuapp.com/)**
-### **[ML Model Notebook](https://github.com/haleelsada/Dogeship/blob/main/model/model_training.ipynb)**
-
-## A project to predict the price of Doge cryptocurrency of any date based on previous data. 
-
-### How it Works ?
 A Machine Learning model with an architecture including Linear regression and the model was trained on it.
 
 The project website can be found **[here](https://haleelsada.github.io/Dogeship/)**. Doge price gets produced when the user inputs the parameters and clicks the `Predict` button. The website was built using HTML, CSS and JS along with an API request and response which deployed in heroku. On pressing the `Predict` button, an API GET request gets called which returns the price. The source code regarding the api and website can be found in the **[api](https://github.com/haleelsada/Dogeship/tree/main/api)** and **[frontend](https://github.com/haleelsada/Dogeship/tree/main/frontend)** folders respectively.
 
-The dataset collected was splitted into train and validation in the ratio 80:20.  Minimal Data Preprocessing was done on the collected dataset, more parameters are generated from the existing dataset. Training was carried out in Goole Colab and the jupyter notebook used for training and validation can be found **[here](https://github.com/haleelsada/Dogeship/blob/main/model/model_training.ipynb)**.
+## Team members
+1. **[Haleel sada](https://github.com/haleelsada/)**
+2. **[Nanda kishore M pai](https://github.com/nandakishormpai/)**
 
-### Libraries used
-      
-  - pandas 
+## Team Id
+**ML / 2**
 
-  - numpy 
+## Link to product walkthrough
+[link to video]
 
-  - joblib
+## How it Works ?
+1. Go to **[website](https://haleelsada.github.io/Dogeship/)** and give date and other parameters to predict the Doge price of next day
+2. On pressing the `Predict` button, an **[API](https://github.com/haleelsada/Dogeship/tree/main/api)** GET request gets called which returns the price
+3. the api uses Linear regression algorithm on previous data to predict the price of Dogecoin
+4. The website was built using HTML, CSS and JS along with an API request and response which deployed in heroku
 
-  - matplotlib
+## Libraries used
 
-  - scikit-learn
+pandas - 1.3.5
 
-  - flask
+numpy - 1.22.3
 
-### How to use
+joblib - 1.1.0
 
-Inorder to train the model, load the python jupyter notebook found **[here](https://github.com/haleelsada/Dogeship/blob/main/model/model_training.ipynb)** in a Google Colab and make a copy of it for your use.<br>
-To predict the price use the Website found **[here](https://haleelsada.github.io/Dogeship/)**.
+matplotlib - 3.2.2
 
-## API
+scikit-learn - 1.0.2
 
-API is built using Flask framework and hosted in Heroku.
+flask - 1.1.4
 
-- Plant Disease Detection
+## How to configure
 
-    Accepts a POST request with input features as a dictionary and returns a dictionary with close price prediction.
-    
+Inorder to train the model, load the python jupyter notebook found **[here](https://github.com/haleelsada/Dogeship/blob/main/model/model_training.ipynb)** in a Google Colab and make a copy of it for use. To predict the price use this **[website](https://haleelsada.github.io/Dogeship/)**.
 
-#### How to use
+The source code regarding the api and website can be found in the **[api](https://github.com/haleelsada/Dogeship/tree/main/api)** and **[frontend](https://github.com/haleelsada/Dogeship/tree/main/frontend)** directories respectively.
 
-API has been built on this Regression Model. URL = "https://dogecoin-prediction-bot.herokuapp.com/"
+API has been built on this Regression Model. URL could be found here **[here](https://dogecoin-prediction-bot.herokuapp.com/)**
 
 User has to send a POST request to the given api with a dictionary of Input Features. 
 
@@ -68,15 +65,7 @@ Output
 '{"close":0.0003021457613296437}\n'
 ```
 
-## Contributors
 
-<table>
-  <tr>
+## How to Run
+The project website could be run from **[here](https://haleelsada.github.io/Dogeship/)**
 
- <td align="center"><a href="https://github.com/haleelsada"><img src="https://avatars.githubusercontent.com/u/75977159?v=4" width="180px;" alt=""/><br /><sub><b>Haleel sada</b></sub></a><br />        
-
-<td align="center"><a href="https://github.com/nandakishormpai"><img src="https://avatars.githubusercontent.com/u/57388834?v=4" width="180px;" alt=""/><br /><sub><b>Nanda Kishor M Pai</b></sub></a><br />
-
-
-</tr>
-</table>
