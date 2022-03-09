@@ -14,7 +14,7 @@ The project website can be found **[here](https://haleelsada.github.io/Dogeship/
 **ML / 2**
 
 ## Link to product walkthrough
-[link to video]
+<a href="https://drive.google.com/file/d/1jv2TpHd9e7E1m1rPKhQqkTQizM1AK77w/view?usp=sharing"   title="Product Walkthrough" target="_blank" ><img src="https://github.com/nandakishormpai2001/manglish_lyrics_generator/blob/frontend/images/walk.jpg" alt="Product Walkthrough" /></a>
 
 ## How it Works ?
 1. Go to **[website](https://haleelsada.github.io/Dogeship/)** and give date and other parameters to predict the Doge price of next day
