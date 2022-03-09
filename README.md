@@ -8,7 +8,7 @@ The project website can be found **[here](https://haleelsada.github.io/Dogeship/
 
 ## Team members
 1. **[Haleel sada](https://github.com/haleelsada/)**
-2. **[Nanda kishore M pai](https://github.com/nandakishormpai/)**
+2. **[Nanda Kishor M Pai](https://github.com/nandakishormpai/)**
 
 ## Team Id
 **ML / 2**
